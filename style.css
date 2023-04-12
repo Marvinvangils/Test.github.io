@@ -1,6 +1,17 @@
-* {
-  box-sizing: border-box;
+body {
+  background-color: white;
 }
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: arial;
+  font-size: 20px;
+}
+
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
