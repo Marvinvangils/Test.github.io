@@ -80,7 +80,7 @@
   
   }
   ul li.checked::before{
-    background-image:url(check.png)
+    background-image:url(check mark.png)
   }
   ul li span{
     position: absolute;
