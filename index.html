@@ -1,99 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-  }
-  .container{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #7f7f7f, #a06511);
-    padding: 10px;
-  }
-  .todo-app{
-    width: 100%;
-    max-width: 540px;
-    background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 10px;
-  }
-  .todo-app h2{
-    color: #000000;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .todo-app h2 img{
-    width: 30px;
-    margin-left:10px;
-  }
-  .row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
-  }
-  input{
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px
-  }
-  button{
-    border: none;
-    outline: none;
-    padding: 16px 50px;
-    background: #ff8e65;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 40px;
-  }
-  ul li{
-    list-style: none;
-    font-size: 17px;
-    padding: 12px 8px 12px 50px;
-    user-select: none;
-    cursor: pointer;
-    position: relative;
-   }
-  ul li::before{
-    content: '';
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(unchecked.png);
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px;
-  }
-  ul li.checked{
-    color: #555;
-    text-decoration: line-through;
-  
-  }
-  ul li.checked::before{
-    background-image:url(check.png)
-  }
-  ul li span{
-    position: absolute;
-    right: 0;
-    top: 5px;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    color: #555;
-    line-height: 40px;
-    text-align: center;
-  }
-  ul li span:hover{
-    background: #edeef0;
-  }
-  
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=divice-width, initial-scale=1">
+  <title>To-Do-List App - Easy tutorials</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="container">
+    <div class="todo-app">
+        <h2>To Do List <img src="to do list.png"></h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your text">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked"> task 1</li>
+          <li> task 2</li>
+          <li> task 3</li> -->
+        </ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
